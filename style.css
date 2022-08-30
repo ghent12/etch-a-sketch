@@ -1,0 +1,7 @@
+.play-square {
+  background-color: blue; 
+}
+
+.play-square:hover {
+  background-color: aqua;
+}
