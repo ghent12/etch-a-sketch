@@ -2,6 +2,7 @@
   background-color: blue; 
 }
 
-.play-square:hover {
+.hovered-square, .play-square:hover {
   background-color: aqua;
 }
+
