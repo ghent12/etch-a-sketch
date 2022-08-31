@@ -13,11 +13,11 @@ body {
   flex-direction: column;
 }
 
-.play-square {
+/*.play-square {
   background-color: blue; 
 }
 
 .hovered-square, .play-square:hover {
   background-color: aqua;
-}
+}*/
 
