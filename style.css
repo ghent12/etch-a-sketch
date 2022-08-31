@@ -12,12 +12,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.play-square {
-  background-color: blue; 
-}
-
-.hovered-square, .play-square:hover {
-  background-color: aqua;
-}
-
