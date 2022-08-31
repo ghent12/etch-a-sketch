@@ -4,9 +4,10 @@ let gridUnitsWide = 16
   , totalWidth = 960
   , squareWidth = 0
   , squareHeight = squareWidth
-  , colorRedValue = Math.round(Math.random() * 2550)/10
-  , colorGreenValue = Math.round(Math.random() * 2550)/10
-  , colorBlueValue = Math.round(Math.random() * 2550)/10;
+  , startingColor = "#ffffff"
+  , colorRedValue = Math.round(Math.random() * 255)
+  , colorGreenValue = Math.round(Math.random() * 255)
+  , colorBlueValue = Math.round(Math.random() * 255);
 
   console.group('color-values');
     console.log('R: ' + colorRedValue);
@@ -46,7 +47,7 @@ function makeGrid(gridUnitCount) {
     for (j = 0; j < gridUnitCount; j++) {
       let playSquare = playArea.appendChild(document.createElement('div'))
       playSquare.classList.add("play-square", ("row-" + (j + 1)), ("column-" + (i + 1)));
-      playSquare.style.cssText = "width: " + squareWidth + "px; height: " + squareHeight + "px; flex-shrink: 1";
+      playSquare.style.cssText = "width: " + squareWidth + "px; height: " + squareHeight + "px; flex-shrink: 1;";
       playSquare.addEventListener('mouseover', addHoveredClass);
     }
   }
