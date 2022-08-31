@@ -47,7 +47,7 @@ function makeGrid(gridUnitCount) {
     for (j = 0; j < gridUnitCount; j++) {
       let playSquare = playArea.appendChild(document.createElement('div'))
       playSquare.classList.add("play-square", ("row-" + (j + 1)), ("column-" + (i + 1)), "hovered-square0");
-      playSquare.style.cssText = "width: " + squareWidth + "px; height: " + squareHeight + "px; flex-shrink: 1; background-color: " + startingColor + ";";
+      playSquare.style.cssText = "width: " + squareWidth + "px; height: " + squareHeight + "px; flex-shrink: 1;";
       playSquare.addEventListener('mouseover', addHoveredClass);
       console.log(playSquare.classList);
     }
@@ -107,9 +107,10 @@ function addHoveredClass(e) {
   } else {
     colorScalar = 0;
   }
-
-  this.style.backgroundColor = 'rgb(' + Math.round(colorRedValue * colorScalar/100) + ',' 
-                                      + Math.round(colorGreenValue * colorScalar/100) + ',' 
-                                      + colorBlueValue + 
-                                      ')';
+  let newRed = Math.round(colorRedValue * colorScalar/100);
+  let newGreen = Math.round(colorGreenValue * colorScalar/100);
+  let newBlue = Math.round(colorBlueValue * colorScalar/100);
+  this.style.backgroundColor = 'rgb(' + newRed + ',' + newGreen + ',' + newBlue + ')';
 }
+
+console.log("Hello");
