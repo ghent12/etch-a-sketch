@@ -4,7 +4,7 @@ let gridUnitsWide = 16
   , totalWidth = 960
   , squareWidth = 0
   , squareHeight = squareWidth
-  , colorRedValue = Math.round(Math.random() * 2550)/10;
+  , colorRedValue = Math.round(Math.random() * 2550)/10
   , colorGreenValue = Math.round(Math.random() * 2550)/10
   , colorBlueValue = Math.round(Math.random() * 2550)/10;
 
